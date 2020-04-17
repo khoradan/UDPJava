@@ -5,7 +5,7 @@ import java.net.*;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileInputStream;
-
+import java.io.Writer;
 
 public class UDPSender 
 {
@@ -15,7 +15,7 @@ public class UDPSender
         final int MAX_BUFFER_SIZE = 8192;//64KB - 20Byte IP Header - 8 Byte UDP Header
         final String FILE_NAME = "text";
         final String FILE_TYPE = ".txt";
-	//InetAddress server = InetAddress.getByName("192.168.0.108");
+	//InetAddress server = InetAddress.getByName("192.168.0.104");
         InetAddress server = InetAddress.getByName("75.143.75.136");
         int numLines = 0;
         int numTimes = 0;
@@ -24,17 +24,23 @@ public class UDPSender
         long totalTime = 0;
         byte [] dataBuffer = new byte[MAX_BUFFER_SIZE];
         
-        File file = new File(FILE_NAME + FILE_TYPE);
+		File dump = new File("output.txt");
+        FileWriter writer = new FileWriter(dump);
+		BufferedWriter dumpWriter = new BufferedWriter(writer);
+		
+		File file = new File(FILE_NAME + FILE_TYPE);
         FileInputStream fileIn = new FileInputStream(file);
         int fileLength = (int)file.length();
         
-        DatagramSocket UDPsocket = new DatagramSocket(7777);
+        DatagramSocket UDPsocket = new DatagramSocket(6788);
         DatagramPacket packet = new DatagramPacket(dataBuffer, MAX_BUFFER_SIZE, server, 8888);
         while(true)
         {
             UDPsocket.connect(server, 8888);
 			System.out.println("Sending file for the " + (numTimes + 1) + "th time.");
-            startTime = System.currentTimeMillis();
+            dumpWriter.write("Sending file for the " + (numTimes + 1) + "th time.");
+			dumpWriter.newLine();
+			startTime = System.currentTimeMillis();
             
             if(fileLength < MAX_BUFFER_SIZE) numBytes = fileIn.read(dataBuffer, 0, fileLength);
             else                                         numBytes = fileIn.read(dataBuffer, 0, MAX_BUFFER_SIZE);
@@ -51,7 +57,6 @@ public class UDPSender
             tGap = endTime - startTime;
             totalTime += tGap;
             System.out.println("Finished sending "+(numTimes + 1)+ "th time sending with time: " + tGap + "ms");
-            
             //open file again
             numTimes++;
             if(numTimes == NUM_TIME_SEND) break;
@@ -63,5 +68,9 @@ public class UDPSender
 		
 		System.out.println("I am done. Sent file " + numTimes + 
                            " times with an average time of: " + (double)totalTime/numTimes + "ms");
+		dumpWriter.write("I am done. Sent file " + numTimes + 
+                           " times with an average time of: " + (double)totalTime/numTimes + "ms");
+		dumpWriter.newLine();
+		dumpWriter.close();
     }
 }

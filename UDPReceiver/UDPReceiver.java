@@ -1,9 +1,11 @@
+
 //Kevin Horadan
 
 import java.io.*;
 import java.net.*;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.Writer;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -22,14 +24,20 @@ public class UDPReceiver
         int numBytes;
         long startTime, endTime, tGap;
         
-        FileOutputStream output = new FileOutputStream("receivedFile" + numTimes + FILE_TYPE);
+        File dump = new File("output.txt");
+        FileWriter writer = new FileWriter(dump);
+		BufferedWriter dumpWriter = new BufferedWriter(writer);
+		
+		FileOutputStream fileOut = new FileOutputStream("receivedFile" + numTimes + FILE_TYPE);
         byte[] dataBuffer = new byte[MAX_BUFFER_SIZE];
         
         DatagramSocket UDPsocket = new DatagramSocket(8888);
         DatagramPacket packet = new DatagramPacket(dataBuffer, MAX_BUFFER_SIZE);
 
         System.out.println("Starting server. Listening for packets");
-        while(true)
+        dumpWriter.write("Starting server. Listening for packets");
+		dumpWriter.newLine();
+		while(true)
         {
             //TODO Method to check connection made
             //timer starts here
@@ -38,32 +46,35 @@ public class UDPReceiver
             startTime = System.currentTimeMillis();//Start time when connection made
             
             System.out.println("Starting to receive file for the " + (numTimes + 1) + "th time.");
-            
+            dumpWriter.write("Starting to receive file for the " + (numTimes + 1) + "th time.");
+			dumpWriter.newLine();
             dataBuffer = packet.getData();
             numBytes = packet.getLength();
             DatagramPacket packetOut = new DatagramPacket(dataBuffer, numBytes, packet.getSocketAddress());
-            output.write(dataBuffer, 0, numBytes);
+            fileOut.write(dataBuffer, 0, numBytes);
             UDPsocket.send(packetOut);
             while(numBytes == MAX_BUFFER_SIZE)
             {
                 UDPsocket.receive(packet);
                 dataBuffer = packet.getData();
                 numBytes = packet.getLength();
-                output.write(dataBuffer, 0, numBytes);
+                fileOut.write(dataBuffer, 0, numBytes);
                 UDPsocket.send(packetOut);
             
             }
-			//output.write needed?
-            output.close();
+			//fileOut.write needed?
+            fileOut.close();
             endTime = System.currentTimeMillis();
             tGap = endTime - startTime;
             totalTime += tGap;
             System.out.println("Finished receiving file for the " + (numTimes + 1) + "th time.");
             System.out.println("Time taken: " + tGap + "ms");
-            
+            dumpWriter.write("Finished receiving file for the " + (numTimes + 1) + "th time.");
+			dumpWriter.write("Time taken: " + tGap + "ms");
+			dumpWriter.newLine();
             numTimes++;
             if(numTimes == NUM_TIME_SEND) break;
-            output = new FileOutputStream("receivedFile" + numTimes + FILE_TYPE);
+            fileOut = new FileOutputStream("receivedFile" + numTimes + FILE_TYPE);
         }
         UDPsocket.close();
         
@@ -71,8 +82,12 @@ public class UDPReceiver
         
         numError = compareFiles(FILE_NAME, FILE_TYPE, NUM_TIME_SEND);
         
-        System.out.println("I am done. received file " + numTimes + " times, and the average time is: " + (double)totalTime/numTimes + "ms.");
+        System.out.println("Average time: " + (double)totalTime/numTimes + "ms.");
         System.out.println(numError + " Errors: " + (numTimes-numError) + " of " + numTimes + " files transferred correctly!");
+		dumpWriter.write("Average time: " + (double)totalTime/numTimes + "ms.");
+		dumpWriter.write(numError + " Errors: " + (numTimes-numError) + " of " + numTimes + " files transferred correctly!");
+		dumpWriter.newLine();
+		dumpWriter.close();
     }
     
     //Returns number of imperfect file transfers
@@ -100,9 +115,9 @@ public class UDPReceiver
                     digest.update(buffer);
                 }while(numBytes != -1);
                 stdFile.close();
-                System.out.println("Control file hash created, length: " + digest.getDigestLength());
+                System.out.println("Comparing files...");
                 stdHash = digest.digest();
-                System.out.println("Control Hash: " + stdHash);
+                //System.out.println("Control Hash: " + stdHash);
                 
                 for(int i = 0; i < n; i++)
                 {
@@ -117,7 +132,7 @@ public class UDPReceiver
                         }while(numBytes != -1);
                         recFile.close();
                         recHash = digest.digest();
-                        System.out.println("File " + i + " Hash: " + recHash);
+                        //System.out.println("File " + i + " Hash: " + recHash);
                         //Compare to standardFile hash
                         if(!digest.isEqual(stdHash, recHash)) errors++;
                     }

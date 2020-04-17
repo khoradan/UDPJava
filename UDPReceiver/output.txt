@@ -1,0 +1,202 @@
+Starting server. Listening for packets
+Starting to receive file for the 1th time.
+Finished receiving file for the 1th time.Time taken: 11ms
+Starting to receive file for the 2th time.
+Finished receiving file for the 2th time.Time taken: 15ms
+Starting to receive file for the 3th time.
+Finished receiving file for the 3th time.Time taken: 12ms
+Starting to receive file for the 4th time.
+Finished receiving file for the 4th time.Time taken: 11ms
+Starting to receive file for the 5th time.
+Finished receiving file for the 5th time.Time taken: 22ms
+Starting to receive file for the 6th time.
+Finished receiving file for the 6th time.Time taken: 23ms
+Starting to receive file for the 7th time.
+Finished receiving file for the 7th time.Time taken: 12ms
+Starting to receive file for the 8th time.
+Finished receiving file for the 8th time.Time taken: 19ms
+Starting to receive file for the 9th time.
+Finished receiving file for the 9th time.Time taken: 23ms
+Starting to receive file for the 10th time.
+Finished receiving file for the 10th time.Time taken: 16ms
+Starting to receive file for the 11th time.
+Finished receiving file for the 11th time.Time taken: 14ms
+Starting to receive file for the 12th time.
+Finished receiving file for the 12th time.Time taken: 22ms
+Starting to receive file for the 13th time.
+Finished receiving file for the 13th time.Time taken: 39ms
+Starting to receive file for the 14th time.
+Finished receiving file for the 14th time.Time taken: 31ms
+Starting to receive file for the 15th time.
+Finished receiving file for the 15th time.Time taken: 16ms
+Starting to receive file for the 16th time.
+Finished receiving file for the 16th time.Time taken: 39ms
+Starting to receive file for the 17th time.
+Finished receiving file for the 17th time.Time taken: 50ms
+Starting to receive file for the 18th time.
+Finished receiving file for the 18th time.Time taken: 53ms
+Starting to receive file for the 19th time.
+Finished receiving file for the 19th time.Time taken: 33ms
+Starting to receive file for the 20th time.
+Finished receiving file for the 20th time.Time taken: 26ms
+Starting to receive file for the 21th time.
+Finished receiving file for the 21th time.Time taken: 52ms
+Starting to receive file for the 22th time.
+Finished receiving file for the 22th time.Time taken: 53ms
+Starting to receive file for the 23th time.
+Finished receiving file for the 23th time.Time taken: 34ms
+Starting to receive file for the 24th time.
+Finished receiving file for the 24th time.Time taken: 44ms
+Starting to receive file for the 25th time.
+Finished receiving file for the 25th time.Time taken: 22ms
+Starting to receive file for the 26th time.
+Finished receiving file for the 26th time.Time taken: 24ms
+Starting to receive file for the 27th time.
+Finished receiving file for the 27th time.Time taken: 38ms
+Starting to receive file for the 28th time.
+Finished receiving file for the 28th time.Time taken: 56ms
+Starting to receive file for the 29th time.
+Finished receiving file for the 29th time.Time taken: 47ms
+Starting to receive file for the 30th time.
+Finished receiving file for the 30th time.Time taken: 32ms
+Starting to receive file for the 31th time.
+Finished receiving file for the 31th time.Time taken: 34ms
+Starting to receive file for the 32th time.
+Finished receiving file for the 32th time.Time taken: 30ms
+Starting to receive file for the 33th time.
+Finished receiving file for the 33th time.Time taken: 29ms
+Starting to receive file for the 34th time.
+Finished receiving file for the 34th time.Time taken: 18ms
+Starting to receive file for the 35th time.
+Finished receiving file for the 35th time.Time taken: 26ms
+Starting to receive file for the 36th time.
+Finished receiving file for the 36th time.Time taken: 19ms
+Starting to receive file for the 37th time.
+Finished receiving file for the 37th time.Time taken: 28ms
+Starting to receive file for the 38th time.
+Finished receiving file for the 38th time.Time taken: 16ms
+Starting to receive file for the 39th time.
+Finished receiving file for the 39th time.Time taken: 36ms
+Starting to receive file for the 40th time.
+Finished receiving file for the 40th time.Time taken: 17ms
+Starting to receive file for the 41th time.
+Finished receiving file for the 41th time.Time taken: 49ms
+Starting to receive file for the 42th time.
+Finished receiving file for the 42th time.Time taken: 35ms
+Starting to receive file for the 43th time.
+Finished receiving file for the 43th time.Time taken: 87ms
+Starting to receive file for the 44th time.
+Finished receiving file for the 44th time.Time taken: 23ms
+Starting to receive file for the 45th time.
+Finished receiving file for the 45th time.Time taken: 27ms
+Starting to receive file for the 46th time.
+Finished receiving file for the 46th time.Time taken: 23ms
+Starting to receive file for the 47th time.
+Finished receiving file for the 47th time.Time taken: 28ms
+Starting to receive file for the 48th time.
+Finished receiving file for the 48th time.Time taken: 29ms
+Starting to receive file for the 49th time.
+Finished receiving file for the 49th time.Time taken: 18ms
+Starting to receive file for the 50th time.
+Finished receiving file for the 50th time.Time taken: 23ms
+Starting to receive file for the 51th time.
+Finished receiving file for the 51th time.Time taken: 27ms
+Starting to receive file for the 52th time.
+Finished receiving file for the 52th time.Time taken: 31ms
+Starting to receive file for the 53th time.
+Finished receiving file for the 53th time.Time taken: 42ms
+Starting to receive file for the 54th time.
+Finished receiving file for the 54th time.Time taken: 14ms
+Starting to receive file for the 55th time.
+Finished receiving file for the 55th time.Time taken: 27ms
+Starting to receive file for the 56th time.
+Finished receiving file for the 56th time.Time taken: 23ms
+Starting to receive file for the 57th time.
+Finished receiving file for the 57th time.Time taken: 16ms
+Starting to receive file for the 58th time.
+Finished receiving file for the 58th time.Time taken: 17ms
+Starting to receive file for the 59th time.
+Finished receiving file for the 59th time.Time taken: 19ms
+Starting to receive file for the 60th time.
+Finished receiving file for the 60th time.Time taken: 16ms
+Starting to receive file for the 61th time.
+Finished receiving file for the 61th time.Time taken: 24ms
+Starting to receive file for the 62th time.
+Finished receiving file for the 62th time.Time taken: 28ms
+Starting to receive file for the 63th time.
+Finished receiving file for the 63th time.Time taken: 19ms
+Starting to receive file for the 64th time.
+Finished receiving file for the 64th time.Time taken: 16ms
+Starting to receive file for the 65th time.
+Finished receiving file for the 65th time.Time taken: 18ms
+Starting to receive file for the 66th time.
+Finished receiving file for the 66th time.Time taken: 16ms
+Starting to receive file for the 67th time.
+Finished receiving file for the 67th time.Time taken: 12ms
+Starting to receive file for the 68th time.
+Finished receiving file for the 68th time.Time taken: 21ms
+Starting to receive file for the 69th time.
+Finished receiving file for the 69th time.Time taken: 25ms
+Starting to receive file for the 70th time.
+Finished receiving file for the 70th time.Time taken: 26ms
+Starting to receive file for the 71th time.
+Finished receiving file for the 71th time.Time taken: 18ms
+Starting to receive file for the 72th time.
+Finished receiving file for the 72th time.Time taken: 24ms
+Starting to receive file for the 73th time.
+Finished receiving file for the 73th time.Time taken: 17ms
+Starting to receive file for the 74th time.
+Finished receiving file for the 74th time.Time taken: 14ms
+Starting to receive file for the 75th time.
+Finished receiving file for the 75th time.Time taken: 11ms
+Starting to receive file for the 76th time.
+Finished receiving file for the 76th time.Time taken: 10ms
+Starting to receive file for the 77th time.
+Finished receiving file for the 77th time.Time taken: 14ms
+Starting to receive file for the 78th time.
+Finished receiving file for the 78th time.Time taken: 18ms
+Starting to receive file for the 79th time.
+Finished receiving file for the 79th time.Time taken: 14ms
+Starting to receive file for the 80th time.
+Finished receiving file for the 80th time.Time taken: 12ms
+Starting to receive file for the 81th time.
+Finished receiving file for the 81th time.Time taken: 15ms
+Starting to receive file for the 82th time.
+Finished receiving file for the 82th time.Time taken: 20ms
+Starting to receive file for the 83th time.
+Finished receiving file for the 83th time.Time taken: 34ms
+Starting to receive file for the 84th time.
+Finished receiving file for the 84th time.Time taken: 11ms
+Starting to receive file for the 85th time.
+Finished receiving file for the 85th time.Time taken: 28ms
+Starting to receive file for the 86th time.
+Finished receiving file for the 86th time.Time taken: 18ms
+Starting to receive file for the 87th time.
+Finished receiving file for the 87th time.Time taken: 18ms
+Starting to receive file for the 88th time.
+Finished receiving file for the 88th time.Time taken: 15ms
+Starting to receive file for the 89th time.
+Finished receiving file for the 89th time.Time taken: 13ms
+Starting to receive file for the 90th time.
+Finished receiving file for the 90th time.Time taken: 12ms
+Starting to receive file for the 91th time.
+Finished receiving file for the 91th time.Time taken: 10ms
+Starting to receive file for the 92th time.
+Finished receiving file for the 92th time.Time taken: 21ms
+Starting to receive file for the 93th time.
+Finished receiving file for the 93th time.Time taken: 11ms
+Starting to receive file for the 94th time.
+Finished receiving file for the 94th time.Time taken: 18ms
+Starting to receive file for the 95th time.
+Finished receiving file for the 95th time.Time taken: 14ms
+Starting to receive file for the 96th time.
+Finished receiving file for the 96th time.Time taken: 13ms
+Starting to receive file for the 97th time.
+Finished receiving file for the 97th time.Time taken: 16ms
+Starting to receive file for the 98th time.
+Finished receiving file for the 98th time.Time taken: 13ms
+Starting to receive file for the 99th time.
+Finished receiving file for the 99th time.Time taken: 10ms
+Starting to receive file for the 100th time.
+Finished receiving file for the 100th time.Time taken: 10ms
+Average time: 23.93ms.0 Errors: 100 of 100 files transferred correctly!
