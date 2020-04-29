@@ -14,7 +14,7 @@ public class UDPReceiver
     {
         final int NUM_TIME_SEND = 5;
         final int MAX_BUFFER_SIZE = 8192;//64KB - 20Byte IP Header - 8 Byte UDP Header
-        final String FILE_NAME = "StandardFile3";
+        final String FILE_NAME = "100mb";
         final String FILE_TYPE = ".txt";
         
 		
